@@ -7,4 +7,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+<bean id="helloWorld" class="spring.inversionOfControl.HelloWorld">
+    <property name="message" value="Hello World the initial greeting"/>
+</bean>
+<bean id="greetings" class="spring.inversionOfControl.HelloWorld">
+<property name="message" value="Greeting is a principal thing"/>
+</bean>
 </beans>
