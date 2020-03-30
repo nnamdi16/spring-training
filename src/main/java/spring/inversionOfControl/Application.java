@@ -1,8 +1,10 @@
 package spring.inversionOfControl;
 
+import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
 
 public class Application {
     public static void main(String[] args) {
@@ -24,5 +26,9 @@ public class Application {
         appConfiguration.getMessage();
         configGreeting.close();
 
+//        Implementation of Bean factory
+        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
+        HelloWorld helloObj = (HelloWorld)factory.getBean("greetings");
+        helloObj.getMessage();
     }
 }
