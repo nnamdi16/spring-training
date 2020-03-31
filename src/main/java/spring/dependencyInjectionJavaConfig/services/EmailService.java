@@ -1,4 +1,4 @@
-package spring.dependencyInjectionJavaConfig;
+package spring.dependencyInjectionJavaConfig.services;
 
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,9 @@
-package spring.dependencyInjectionJavaConfig;
+package spring.dependencyInjectionJavaConfig.constructor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import spring.dependencyInjectionJavaConfig.services.MessageService;
 
 @Component
 public class ConstructorBasedInjection {

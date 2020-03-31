@@ -1,4 +1,4 @@
-package spring.dependencyInjectionJavaConfig;
+package spring.dependencyInjectionJavaConfig.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

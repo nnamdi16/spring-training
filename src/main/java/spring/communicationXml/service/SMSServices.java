@@ -1,4 +1,4 @@
-package spring.communicationXml;
+package spring.communicationXml.service;
 
 public class SMSServices implements MessageServices {
     private String message;

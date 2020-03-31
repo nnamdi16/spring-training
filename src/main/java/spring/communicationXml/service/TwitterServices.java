@@ -1,6 +1,6 @@
-package spring.communicationXml;
+package spring.communicationXml.service;
 
-public class EmailServices implements MessageServices {
+public class TwitterServices implements MessageServices {
     private String message;
 
     public void setMessage(String message) {
@@ -9,6 +9,7 @@ public class EmailServices implements MessageServices {
 
     @Override
     public void sendMessages() {
-        System.out.println("EmailServices: " + message);
+        System.out.println("TwitterServices: " + message);
+
     }
 }

@@ -1,5 +1,7 @@
 package spring.communicationXml;
 
+import spring.communicationXml.service.MessageServices;
+
 public class CommunicationChannel {
     private MessageServices twitterServices;
     private MessageServices emailServices;

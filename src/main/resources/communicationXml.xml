@@ -4,15 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="emailServices" class="spring.communicationXml.EmailServices">
+    <bean id="emailServices" class="spring.communicationXml.service.EmailServices">
         <property name="message" value="Gmail is the major email service"/>
     </bean>
 
-    <bean id="smsServices" class="spring.communicationXml.SMSServices">
+    <bean id="smsServices" class="spring.communicationXml.service.SMSServices">
         <property name="message" value="SMSServices are done via mobile networks"/>
     </bean>
 
-    <bean id="twitterServices" class="spring.communicationXml.TwitterServices">
+    <bean id="twitterServices" class="spring.communicationXml.service.TwitterServices">
         <property name="message" value="TwitterServices used for tweeting 130 characters is sure the best for now"/>
     </bean>
 
