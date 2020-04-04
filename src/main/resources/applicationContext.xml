@@ -12,8 +12,9 @@
 <property name="message" value="Greeting is a principal thing"/>
 </bean>
 
+    <import resource="lazyXml.xml"/>
     <import resource="constructorXmlDependencyInjection.xml"/>
     <import resource="communicationXml.xml"/>
-    <import resource="dependsOnXml.xml"/>
+    <!--<import resource="dependsOnXml.xml"/>-->
 </beans>
 
