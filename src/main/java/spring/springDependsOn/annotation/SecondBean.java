@@ -2,7 +2,7 @@ package spring.springDependsOn.annotation;
 
 public class SecondBean {
     public SecondBean() {
-        System.out.println("SecondBean Initialized via constructor");
+        System.out.println("SecondBean Initialized up the constructor");
     }
 
     public void display() {
