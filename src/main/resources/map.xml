@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="solution1" class="spring.constructorInjection.Map.Answer">
+        <constructor-arg value="1"></constructor-arg>
+        <constructor-arg value="Java is a programming language"/>
+        <constructor-arg value="12/12/2001"/>
+    </bean>
+
+    <bean id="solution2" class="spring.constructorInjection.Map.Answer">
+        <constructor-arg value="2"/>
+        <constructor-arg value="Java is a platform"/>
+        <constructor-arg value="12/12/2003"/>
+    </bean>
+
+    <bean id="user1" class="spring.constructorInjection.Map.User">
+        <constructor-arg value="1"/>
+        <constructor-arg value="Arun Kumar"/>
+        <constructor-arg value="arun@gmail.com"/>
+    </bean>
+
+    <bean id="user2" class="spring.constructorInjection.Map.User">
+        <constructor-arg value="2"/>
+        <constructor-arg value="Varun Kumar"/>
+        <constructor-arg value="arun@gmail.com"/>
+    </bean>
+
+    <bean id="question1" class="spring.constructorInjection.Map.Question">
+        <constructor-arg value="1"/>
+        <constructor-arg value="What is Java?"/>
+        <constructor-arg>
+            <map>
+                <entry key-ref="solution1" value-ref="user1"></entry>
+                <entry key-ref="solution2" value-ref="user2"/>
+            </map>
+        </constructor-arg>
+    </bean>
+</beans>
