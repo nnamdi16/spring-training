@@ -16,5 +16,9 @@
     <import resource="constructorXmlDependencyInjection.xml"/>
     <import resource="communicationXml.xml"/>
     <!--<import resource="dependsOnXml.xml"/>-->
+    <import resource="dependencyObject.xml"/>
+    <import resource="collection1.xml"/>
+    <import resource="collection2.xml"/>
+    <import resource="map.xml"/>
 </beans>
 
