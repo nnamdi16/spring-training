@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Question question = context.getBean("question", Question.class);
+        Question question = context.getBean("exam", Question.class);
         question.displayInfo();
     }
 }
