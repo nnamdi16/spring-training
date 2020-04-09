@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="worker1" class="spring.constructorInjection.beanInheritance.Worker">
+        <constructor-arg value="101"/>
+        <constructor-arg value="Sachin"/>
+    </bean>
+
+    <bean id="location1" class="spring.constructorInjection.beanInheritance.Location">
+        <constructor-arg value="21, Lohianagar"/>
+        <constructor-arg value="Satellite Town"/>
+        <constructor-arg value="Lagos"/>
+        <constructor-arg value="Nigeria"/>
+    </bean>
+    <bean id="worker2" class="spring.constructorInjection.beanInheritance.Worker" parent="worker1">
+        <constructor-arg ref="location1"/>
+    </bean>
+</beans>
