@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address1" class="spring.setterInjection.dependentObject.Address1">
+        <property name="addressLine" value="7th Avenue"/>
+        <property name="city" value="Lagos"/>
+        <property name="country" value="Nigeria"/>
+        <property name="state" value="Lagos State"/>
+    </bean>
+
+    <bean id="person" class="spring.setterInjection.dependentObject.Person">
+        <property name="id" value="1"/>
+        <property name="address1" ref="address1"/>
+        <property name="name" value="James"/>
+    </bean>
+</beans>
