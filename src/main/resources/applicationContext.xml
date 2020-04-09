@@ -20,5 +20,9 @@
     <import resource="collection1.xml"/>
     <import resource="collection2.xml"/>
     <import resource="map.xml"/>
+    <import resource="beanInheritance.xml"/>
+    <import resource="setterString.xml"/>
+    <import resource="setterDependentObject"/>
+    <import resource="setterList"/>
 </beans>
 
