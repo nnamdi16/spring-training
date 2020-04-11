@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="shoppingList" class="spring.setterInjection.setterInjectionMap.ShoppingList">
+        <property name="id" value="1"/>
+        <property name="shopName" value="ShopRite"/>
+        <property name="shoppingDetails">
+            <map>
+                <entry key="Food Items" value="Rice"/>
+                <entry key="Clothing" value="Shoe"/>
+            </map>
+        </property>
+    </bean>
+</beans>
