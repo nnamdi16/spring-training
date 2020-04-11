@@ -15,13 +15,13 @@
         <constructor-arg value="12/12/2003"/>
     </bean>
 
-    <bean id="user1" class="spring.constructorInjection.Map.User">
+    <bean id="handler1" class="spring.constructorInjection.Map.User">
         <constructor-arg value="1"/>
         <constructor-arg value="Arun Kumar"/>
         <constructor-arg value="arun@gmail.com"/>
     </bean>
 
-    <bean id="user2" class="spring.constructorInjection.Map.User">
+    <bean id="handler2" class="spring.constructorInjection.Map.User">
         <constructor-arg value="2"/>
         <constructor-arg value="Varun Kumar"/>
         <constructor-arg value="arun@gmail.com"/>
@@ -32,8 +32,8 @@
         <constructor-arg value="What is Java?"/>
         <constructor-arg>
             <map>
-                <entry key-ref="solution1" value-ref="user1"></entry>
-                <entry key-ref="solution2" value-ref="user2"/>
+                <entry key-ref="solution1" value-ref="handler1"></entry>
+                <entry key-ref="solution2" value-ref="handler2"/>
             </map>
         </constructor-arg>
     </bean>
