@@ -7,10 +7,9 @@ public class Course {
         System.out.println("Private Constructor");
     }
 
-    public static Course getCourse() {
-        System.out.println("Factory Method");
-//        return course;
-        return null;
+    public static Course getObj() {
+        System.out.println("Factory method");
+        return obj;
     }
 
     public void msg() {
