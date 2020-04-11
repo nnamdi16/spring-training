@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="issues1" class="spring.setterInjection.setterInjectionNonStringMap.Issues">
+        <property name="id" value="1"/>
+        <property name="issues" value="Java is a programming language"/>
+        <property name="postedDate" value="12/03/2019"/>
+    </bean>
+    <bean id="issues2" class="spring.setterInjection.setterInjectionNonStringMap.Issues">
+        <property name="id" value="2"/>
+        <property name="issues" value="Java is trending"/>
+        <property name="postedDate" value="12/04/2019"/>
+    </bean>
+
+
+    <bean id="user1" class="spring.setterInjection.setterInjectionNonStringMap.User">
+        <property name="id" value="1"/>
+        <property name="name" value="Vanesa Gwen"/>
+        <property name="email" value="vanesa@gmail.com"/>
+    </bean>
+    <bean id="user2" class="spring.setterInjection.setterInjectionNonStringMap.User">
+        <property name="id" value="2"/>
+        <property name="name" value="Job Silas"/>
+        <property name="email" value="job@gmail.com"/>
+    </bean>
+
+    <bean id="review" class="spring.setterInjection.setterInjectionNonStringMap.ExamQuestion">
+        <property name="id" value="1"/>
+        <property name="name" value="What is Java"/>
+        <property name="issues">
+            <map>
+                <entry key-ref="issues1" value-ref="user1"/>
+                <entry key-ref="issues2" value-ref="user2"/>
+            </map>
+        </property>
+    </bean>
+</beans>
