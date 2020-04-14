@@ -5,7 +5,7 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="prototype" class="spring.beanScope.prototype.LearningService" scope="prototype">
+    <bean id="prototype" class="spring.beanScope.prototype.example1.LearningService" scope="prototype">
 
     </bean>
 </beans>
