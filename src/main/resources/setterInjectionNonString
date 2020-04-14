@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
     <bean id="issues1" class="spring.setterInjection.setterInjectionNonStringMap.Issues">
         <property name="id" value="1"/>
         <property name="issues" value="Java is a programming language"/>

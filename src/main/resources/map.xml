@@ -3,6 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
     <bean id="solution1" class="spring.constructorInjection.Map.Answer">
         <constructor-arg value="1"></constructor-arg>
         <constructor-arg value="Java is a programming language"/>

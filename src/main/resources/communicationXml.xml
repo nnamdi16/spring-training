@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
     <bean id="emailServices" class="spring.communicationXml.service.EmailServices">
         <property name="message" value="Gmail is the major email service"/>
     </bean>

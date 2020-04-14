@@ -27,9 +27,11 @@
     <import resource="nonStringCollection"/>
     <import resource="setterInjectionMap"/>
     <import resource="setterInjectionNonString"/>
-    <!--<import resource="staticFactoryMethod1"/>-->
+    <import resource="staticFactoryMethod1"/>
     <import resource="factoryBeanDemo"/>
-    <!--<import resource="staticFactoryMethod"/>-->
-    <import resource="singleton"/>
+    <import resource="staticFactoryMethod"/>
+    <!--<import resource="singleton"/>-->
+    <!--<import resource="prototype"/>-->
+    <import resource="init-dispose"/>
 </beans>
 

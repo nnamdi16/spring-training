@@ -3,6 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
+
     <bean id="worker1" class="spring.constructorInjection.beanInheritance.Worker">
         <constructor-arg value="101"/>
         <constructor-arg value="Sachin"/>
