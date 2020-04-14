@@ -1,4 +1,4 @@
-package spring.beanScope.prototype;
+package spring.beanScope.prototype.example1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

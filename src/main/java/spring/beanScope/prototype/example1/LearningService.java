@@ -1,4 +1,4 @@
-package spring.beanScope.prototype;
+package spring.beanScope.prototype.example1;
 
 public class LearningService {
     private String name;
