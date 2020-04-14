@@ -33,5 +33,6 @@
     <!--<import resource="singleton"/>-->
     <!--<import resource="prototype"/>-->
     <import resource="init-dispose"/>
+    <import resource="initDestroyMethod"/>
 </beans>
 
