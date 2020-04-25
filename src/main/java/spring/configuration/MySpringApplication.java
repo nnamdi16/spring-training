@@ -18,7 +18,8 @@ public class MySpringApplication {
         System.out.println("First Username :" + blogger1.getUserName());
 
         context.getEnvironment().setActiveProfiles("dev");
-        context.scan("spring.configuration");
+//        context.scan("spring.configuration");
+        context.register(DevEnvConfig.class);
         context.refresh();
         Blogger user = context.getBean(Blogger.class);
         System.out.println("User name: " + user.getUserName());
