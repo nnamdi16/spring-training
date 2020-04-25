@@ -12,10 +12,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MySpringApplication {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(TheAppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         AbstractApplicationContext context1 = new ClassPathXmlApplicationContext("applicationContext.xml");
         Blogger blogger1 = context1.getBean("theNextUser", Blogger.class);
         System.out.println("First Username :" + blogger1.getUserName());
+
+        context.getEnvironment().setActiveProfiles("dev");
+        context.scan("spring.configuration");
+        context.refresh();
         Blogger user = context.getBean(Blogger.class);
         System.out.println("User name: " + user.getUserName());
         context.registerShutdownHook();
