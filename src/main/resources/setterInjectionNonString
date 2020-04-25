@@ -17,7 +17,7 @@
     </bean>
 
 
-    <bean id="user1" class="spring.setterInjection.setterInjectionNonStringMap.User">
+    <bean id="blogger1" class="spring.setterInjection.setterInjectionNonStringMap.User">
         <property name="id" value="1"/>
         <property name="name" value="Vanesa Gwen"/>
         <property name="email" value="vanesa@gmail.com"/>
@@ -33,7 +33,7 @@
         <property name="name" value="What is Java"/>
         <property name="issues">
             <map>
-                <entry key-ref="issues1" value-ref="user1"/>
+                <entry key-ref="issues1" value-ref="blogger1"/>
                 <entry key-ref="issues2" value-ref="user2"/>
             </map>
         </property>
