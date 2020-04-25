@@ -28,7 +28,7 @@
     <import resource="setterInjectionMap"/>
     <import resource="setterInjectionNonString"/>
     <import resource="staticFactoryMethod1"/>
-    <import resource="factoryBeanDemo"/>
+    <import resource="factoryBeanDemo.xml"/>
     <import resource="staticFactoryMethod"/>
     <!--<import resource="singleton"/>-->
     <!--<import resource="prototype"/>-->
