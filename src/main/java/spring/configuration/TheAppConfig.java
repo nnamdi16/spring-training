@@ -7,10 +7,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
 @PropertySource("classpath:property/myproject.properties")
 @Profile("main")
+@EnableScheduling
 public class TheAppConfig {
     @Value("${cp.user.country}")
     private String country;
@@ -33,4 +35,8 @@ public class TheAppConfig {
         return new Blogger("travis124");
     }
 
+    @Bean
+    public Task task() {
+        return new Task();
+    }
 }
