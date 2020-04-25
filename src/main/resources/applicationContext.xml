@@ -11,7 +11,7 @@
 <bean id="greetings" class="spring.inversionOfControl.HelloWorld">
 <property name="message" value="Greeting is a principal thing"/>
 </bean>
-    <import resource="configuration-class.xml"/>
+    <import resource="cofigurations-class"/>
     <import resource="lazyXml.xml"/>
     <import resource="constructorXmlDependencyInjection.xml"/>
     <import resource="communicationXml.xml"/>
