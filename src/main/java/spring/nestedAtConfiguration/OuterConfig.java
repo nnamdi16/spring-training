@@ -44,4 +44,13 @@ public class OuterConfig {
  * This also involves registering only outer configuration class against application context
  * which will bootstrap nested configuration classes.
  * Nested configuration classes helps to avoid the use of @Import
+ * Other annotations used along side with @Configuration:
+ * @PropertySource:a convenient and declarative mechanism for adding a property source to Spring's Environment
+ * @Profile: enables the configuration classes to be registered when specified profiles are active.
+ * @EnableScheduling: enables Spring's scheduled task execution capability.
+ * @ImportResource: indicates one or more resources containing bean definition to import
+ * @Import: indicates one or more @Configuration classes to import
+ * @ComponentScan: configures component scanning directives for use with @Configuration classes
+ * @EnableWebMvc: provides Spring MVC configuration
+ * @EnableWebSecurity: Provides Spring Security configuration.
  */
