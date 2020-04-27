@@ -34,6 +34,9 @@
     <!--<import resource="prototype"/>-->
     <import resource="init-dispose"/>
     <import resource="initDestroyMethod"/>
+    <import resource="spring-config-dev"/>
+    <import resource="spring-config-prod"/>
+    <import resource="spring-config-test"/>
 
 </beans>
 
