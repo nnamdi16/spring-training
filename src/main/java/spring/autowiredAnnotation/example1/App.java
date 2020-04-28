@@ -1,4 +1,4 @@
-package spring.autowiredAnnotation;
+package spring.autowiredAnnotation.example1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

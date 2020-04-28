@@ -1,4 +1,4 @@
-package spring.autowiredAnnotation;
+package spring.autowiredAnnotation.example1;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
