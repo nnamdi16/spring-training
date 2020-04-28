@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--    Used to activate the @Autowired annotation in Spring -->
+    <context:annotation-config></context:annotation-config>
+    <bean id="myCapital" class="spring.autowiredAnnotation.example2.Capital">
+        <property name="name" value="Lagos"/>
+    </bean>
+
+    <bean id="myCountry" class="spring.autowiredAnnotation.example2.Country">
+        <property name="countryName" value="Nigeria"/>
+    </bean>
+</beans>
