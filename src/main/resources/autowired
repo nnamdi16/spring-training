@@ -6,12 +6,12 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config></context:annotation-config>
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
-    <bean id="customerBean" class="spring.autowiredAnnotation.Customer">
+    <bean id="customerBean" class="spring.autowiredAnnotation.example1.Customer">
         <property name="action" value="buy"/>
         <property name="type" value="1"/>
     </bean>
 
-    <bean id="personBean" class="spring.autowiredAnnotation.Person">
+    <bean id="personBean" class="spring.autowiredAnnotation.example1.Person">
         <property name="name" value="Samuel"/>
         <property name="address" value="address"/>
         <property name="age" value="20"/>
