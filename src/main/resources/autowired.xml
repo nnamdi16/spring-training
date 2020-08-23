@@ -17,3 +17,5 @@
         <property name="age" value="20"/>
     </bean>
 </beans>
+
+<!--spring.autowiredAnnotation.example1.Customer-->

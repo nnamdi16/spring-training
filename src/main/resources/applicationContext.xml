@@ -11,7 +11,7 @@
 <bean id="greetings" class="spring.inversionOfControl.HelloWorld">
 <property name="message" value="Greeting is a principal thing"/>
 </bean>
-    <import resource="cofigurations-class"/>
+    <import resource="cofigurations-class.xml"/>
     <import resource="lazyXml.xml"/>
     <import resource="constructorXmlDependencyInjection.xml"/>
     <import resource="communicationXml.xml"/>
@@ -22,21 +22,22 @@
     <import resource="map.xml"/>
     <import resource="beanInheritance.xml"/>
     <import resource="setterString.xml"/>
-    <import resource="setterDependentObject"/>
-    <import resource="setterList"/>
-    <import resource="nonStringCollection"/>
-    <import resource="setterInjectionMap"/>
-    <import resource="setterInjectionNonString"/>
-    <import resource="staticFactoryMethod1"/>
+    <import resource="setterDependentObject.xml"/>
+    <import resource="setterList.xml"/>
+    <import resource="nonStringCollection.xml"/>
+    <import resource="setterInjectionMap.xml"/>
+    <import resource="setterInjectionNonString.xml"/>
+    <import resource="staticFactoryMethod1.xml"/>
     <import resource="factoryBeanDemo.xml"/>
-    <import resource="staticFactoryMethod"/>
-    <!--<import resource="singleton"/>-->
-    <!--<import resource="prototype"/>-->
-    <import resource="init-dispose"/>
-    <import resource="initDestroyMethod"/>
-    <import resource="spring-config-dev"/>
-    <import resource="spring-config-prod"/>
-    <import resource="spring-config-test"/>
+    <import resource="staticFactoryMethod.xml"/>
+    <!--<import resource="singleton.xml"/>-->
+    <!--<import resource="prototype.xml"/>-->
+    <import resource="init-dispose.xml"/>
+    <import resource="initDestroyMethod.xml"/>
+    <import resource="spring-config-dev.xml"/>
+    <import resource="spring-config-prod.xml"/>
+    <import resource="spring-config-test.xml"/>
+    <import resource="spring-demo.xml"/>
 
 </beans>
 
