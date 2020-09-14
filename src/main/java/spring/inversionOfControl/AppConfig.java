@@ -21,3 +21,5 @@ public class AppConfig {
         return greetings;
     }
 }
+
+//Inversion of control is the approach of outsourcing the construction and management of objects. The outsource would be managed by an object factory.
