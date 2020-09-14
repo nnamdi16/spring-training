@@ -17,7 +17,7 @@ public class TestApplication {
 
         ApplicationContext context1 = new ClassPathXmlApplicationContext("applicationContext.xml");
         LearningService learningService2 = context1.getBean("prototype", LearningService.class);
-        learningService2.setName("Spring prototype is all around");
+        learningService2.setName("Spring prototype.xml is all around");
         System.out.println(learningService2.getName());
 
         LearningService learningService3 = context1.getBean("prototype", LearningService.class);
