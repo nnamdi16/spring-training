@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AppMain {
     public static void autowired(String file) {
         ApplicationContext context = new ClassPathXmlApplicationContext(file);
-        if (file.equalsIgnoreCase("autowired-qualifier")) {
+        if (file.equalsIgnoreCase("autowired-qualifier.xml")) {
             Country2 country = context.getBean("myCountry1", Country2.class);
             System.out.println(country.toString());
         } else {
@@ -21,11 +21,11 @@ public class AppMain {
         switch (choice) {
             case 1:
                 System.out.println("'Autowired annotation' selected");
-                autowired("autowired-qualifier");
+                autowired("autowired-qualifier.xml");
                 break;
             case 2:
                 System.out.println("' Autowired with Qualifier annotation' selected");
-                autowired("autowired1");
+                autowired("autowired1.xml");
                 break;
             default:
                 System.err.println("Invalid choice");
