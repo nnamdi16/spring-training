@@ -18,6 +18,9 @@ public class App {
         //Call a method on the bean
         System.out.println(engineer.getDailyCoding());
 
+        //call method to get the daily engineering service.
+        System.out.println(engineer.getDailyEngineeringService());
+
         //Close the context
         context.close();
 
