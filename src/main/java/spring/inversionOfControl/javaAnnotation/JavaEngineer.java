@@ -1,6 +1,7 @@
 package spring.inversionOfControl.javaAnnotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -8,7 +9,10 @@ import java.util.Arrays;
 @Component
 public class JavaEngineer implements Engineer {
 
+//    @Autowired
+//    @Qualifier("javaEngineeringService")
     private EngineeringService engineeringService;
+
     private EngineeringLifeStyle engineeringLifeStyle;
 
     @Autowired
@@ -24,8 +28,8 @@ public class JavaEngineer implements Engineer {
 
     //Constructor
     @Autowired
-    public JavaEngineer(EngineeringService theEngineeringService) {
-        engineeringService = theEngineeringService;
+    public JavaEngineer(@Qualifier("databaseEngineeringService") EngineeringService engineeringService) {
+        this.engineeringService = engineeringService;
     }
 
     @Autowired
