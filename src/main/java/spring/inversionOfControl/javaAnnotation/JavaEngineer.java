@@ -11,6 +11,12 @@ public class JavaEngineer implements Engineer {
     private EngineeringService engineeringService;
     private EngineeringLifeStyle engineeringLifeStyle;
 
+    @Autowired
+    private EngineeringUpdate engineeringUpdate;
+
+    @Autowired
+    private JavaEngineeringUpdate javaEngineeringUpdate;
+
     //define a default constructor
     public JavaEngineer() {
         System.out.println(">> JavaEngineer: inside default constructor");
@@ -42,9 +48,11 @@ public class JavaEngineer implements Engineer {
     @Override
     public String getDailyEngineeringService() {
 
-        String[] engineeringServices = new String[2];
+        String[] engineeringServices = new String[4];
         engineeringServices[0] = engineeringService.getEngineeringService();
         engineeringServices[1] = engineeringLifeStyle.getEngineeringLifeStyle();
+        engineeringServices[2] = engineeringUpdate.getEngineeringUpdate();
+        engineeringServices[3] = javaEngineeringUpdate.getEngineeringUpdate();
 
 //        return Arrays.toString(engineeringServices);
         return Arrays.deepToString(engineeringServices);

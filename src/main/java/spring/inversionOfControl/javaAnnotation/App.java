@@ -24,6 +24,8 @@ public class App {
         //Close the context
         context.close();
 
+        //Inject dependencies by setting field values on your class directly(even private fields) - accomplished by using Java reflection
+
 
     }
 }
