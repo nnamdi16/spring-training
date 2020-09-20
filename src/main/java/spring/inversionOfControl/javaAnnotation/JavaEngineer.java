@@ -5,10 +5,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.Arrays;
 
 @Component
-@Scope("prototype")
+//@Scope("prototype")
 public class JavaEngineer implements Engineer {
 
 //    @Autowired
@@ -64,6 +66,20 @@ public class JavaEngineer implements Engineer {
         return Arrays.deepToString(engineeringServices);
 
     }
+
+    //init method
+    @PostConstruct
+    public void doMyStartupStuff() {
+        System.out.println(">> JavaEngineer: inside of doMyStartupStuff() ");
+    }
+
+    //Destroy method
+    @PreDestroy
+    public void doMyCleanUpStuff() {
+        System.out.println(">> JavaEngineer: inside my doMyCleanupStuff()");
+    }
+
+
 
 
 
