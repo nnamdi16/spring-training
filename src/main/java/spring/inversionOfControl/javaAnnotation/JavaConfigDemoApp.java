@@ -1,0 +1,30 @@
+package spring.inversionOfControl.javaAnnotation;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+
+public class JavaConfigDemoApp {
+    public static void main(String[] args) {
+
+        //Read spring config java class
+
+
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig.class);
+
+        //Get the bean from the spring container
+        Engineer engineer = context.getBean("javaEngineer", Engineer.class);
+        Engineer sampleEngineer = context.getBean("javaEngineer",Engineer.class);
+
+        //Check if they are the same
+        boolean result = (engineer == sampleEngineer);
+
+        System.out.println("\n Pointing to the same object: " + result);
+        System.out.println("\n Memory location for engineer: " + engineer);
+        System.out.println("\n Memory location for sampleEngineer: " + sampleEngineer + "\n");
+
+        //close the context
+        context.close();
+
+
+    }
+}
